@@ -1,0 +1,14 @@
+DECLARE
+grade char (1) :='A';
+BEGIN
+case grade
+WHEN 'A' THEN DBMS_OUTPUT.PUT_LINE('Excellent');
+WHEN 'B' THEN DBMS_OUTPUT.PUT_LINE('Very Good');
+WHEN 'C' THEN DBMS_OUTPUT.PUT_LINE('Good');
+WHEN 'D' THEN DBMS_OUTPUT.PUT_LINE('Average');
+WHEN 'F' THEN DBMS_OUTPUT.PUT_LINE('pass with grade');
+ELSE 
+DBMS_OUTPUT.PUT_LINE('Flailed');
+END CASE;
+END;
+/
